@@ -1,0 +1,63 @@
+# Loading project prog_seq
+# Compile of seq2.vhdl was successful.
+# Compile of seq2.vhdl failed with 13 errors.
+# Compile of seq2.vhdl failed with 14 errors.
+# Compile of seq2.vhdl failed with 14 errors.
+# Compile of seq2.vhdl failed with 14 errors.
+# Compile of seq2.vhdl failed with 14 errors.
+# Compile of seq2.vhdl failed with 14 errors.
+# Compile of seq2.vhdl failed with 14 errors.
+# Compile of seq2.vhdl failed with 2 errors.
+# Compile of seq2.vhdl failed with 15 errors.
+# Compile of seq2.vhdl failed with 15 errors.
+# Compile of seq2.vhdl failed with 2 errors.
+# Compile of seq2.vhdl failed with 2 errors.
+# Compile of seq2.vhdl failed with 5 errors.
+# Compile of seq2.vhdl was successful with warnings.
+# Compile of seq2.vhdl was successful.
+vsim work.lfsr
+# vsim work.lfsr 
+# Start time: 08:31:17 on Dec 02,2016
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lfsr(lfsr)
+add wave -position end  sim:/lfsr/LFSR_int
+add wave -position end  sim:/lfsr/clk
+force -freeze sim:/lfsr/clk 1 0, 0 {50 ps} -r 100
+wave create -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 50ps -step 1 -repeat forever -starttime 0ps -endtime 10000ps sim:/lfsr/clk
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+run 1000
+# Compile of seq2.vhdl failed with 16 errors.
+# Compile of seq2.vhdl was successful.
+vsim work.lfsr
+# End time: 08:34:00 on Dec 02,2016, Elapsed time: 0:02:43
+# Errors: 0, Warnings: 0
+# vsim work.lfsr 
+# Start time: 08:34:00 on Dec 02,2016
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lfsr(lfsr)
+wave create -driver freeze -pattern counter -startvalue 0 -endvalue 1 -type Range -direction Up -period 50ps -step 1 -repeat forever -starttime 0ps -endtime 10000ps sim:/lfsr/clk
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+add wave -position end  sim:/lfsr/LFSR_int
+run 1000
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 50 ps.
+run 10000
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 50 ps.
+restart
+run 10000
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 50 ps.
+# Compile of seq2.vhdl was successful.
+restart
+# Loading work.lfsr(lfsr)
+run 10000
+# Compile of seq2.vhdl failed with 2 errors.
+# Compile of seq2.vhdl failed with 2 errors.
+# Compile of seq2.vhdl was successful.
+# Compile of seq2.vhdl was successful.
+add wave -position end  sim:/lfsr/LFSR
+restart
+# Loading work.lfsr(lfsr)
+run 10000
